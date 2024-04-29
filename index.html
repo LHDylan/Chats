@@ -1,13 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chats</title>
 
+    <!-- Appel des données -->
+    <script src="chatons.js"></script>
+    <!-- Appel des fonctions -->
+    <script src="controller.js"></script>
+    <!-- Appel de l'interface, ce qui lance les fonctions -->
     <script src="main.js"></script>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-</body>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://kit.fontawesome.com/0848ee71d2.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>PotiChats</h1>
+    </header>
+
+    <main>
+      <!-- section pour le plateau de jeu et les boutons -->
+      <section>
+        <div id="plateau"></div>
+      </section>
+
+      <!-- aside pour les personnages -->
+      <aside>
+        <!-- <button>Commencer une partie</button> -->
+
+        <div id="radio"></div>
+
+        <div id="buttons">
+          <table>
+            <tr>
+              <td></td>
+              <td>
+                <button><i class="fa-solid fa-arrow-up"></i></button>
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>
+                <button><i class="fa-solid fa-arrow-left"></i></button>
+              </td>
+              <td></td>
+              <td>
+                <button><i class="fa-solid fa-arrow-right"></i></button>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <button><i class="fa-solid fa-arrow-down"></i></button>
+              </td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+      </aside>
+    </main>
+
+    <footer>Made with ❤️ by la Poti"Team" Kevin, Salah, Alex et Dylan</footer>
+  </body>
 </html>
